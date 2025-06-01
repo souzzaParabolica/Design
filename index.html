@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <meta name="theme-color" content="#000000c3" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="fixed w-screen flex flex-col xl:flex-row justify-between items-center px-10 py-5 text-white gap-5"
+    >
+      <h1 class="text-3xl">SITE/LOGO</h1>
+      <ul class="flex gap-8 xl:text-[20px] text-center">
+        <li class="cursor-pointer">Curiosidades</li>
+        <li class="cursor-pointer">Sobre nós</li>
+        <li class="cursor-pointer">Contato</li>
+        <li class="cursor-pointer">Suporte</li>
+      </ul>
+    </header>
+    <div
+      class="hero w-screen h-screen flex flex-col justify-center items-center gap-10 pt-[8rem] xl:pt-0"
+    >
+      <h2 class="titulo text-4xl text-center text-[#8a2be2]">
+        Seja bem vindo ao nosso site
+      </h2>
+      <p class="desc text-2xl text-center text-white">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, omnis
+        doloribus voluptatibus sit nulla
+      </p>
+      <button class="saibaMais bg-[#8a2be2] text-white w-[200px] h-[45px]">
+        Saiba mais
+      </button>
+      <p class="sub text-2xl text-center text-white">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, sed
+        cupiditate eligendi perspiciatis sapiente possimus sunt repudiandae
+      </p>
+    </div>
+
+    <!-- <div
+      class="secao2 w-screen h-screen flex flex-row xl:flex-row justify-center gap-5 xl:justify-around items-center px-5 xl:px-[150px] xl:gap-10"
+    >
+      <div
+        class="card w-[100px] xl:w-[200px] h-[100px] xl:h-[200px] bg-red-900 flex justify-center items-center text-2xl text-white"
+      >
+        Animado
+      </div>
+      <div
+        class="card w-[100px] xl:w-[200px] h-[100px] xl:h-[200px] bg-red-900 flex justify-center items-center text-2xl text-white"
+      >
+        Com
+      </div>
+      <div
+        class="card w-[100px] xl:w-[200px] h-[100px] xl:h-[200px] bg-red-900 flex justify-center items-center text-2xl text-white"
+      >
+        GSAP
+      </div>
+    </div>
+
+    <div
+      class="secao3 xl:pt-[0] bg-black w-screen xl:h-screen h-auto flex justify-center items-center relative"
+    >
+      <div
+        class="container flex flex-col xl:flex-row justify-center xl:gap-10 w-[80%] h-auto bg-[#505050]/80 xl:px-10 xl:py-5 py-0 mb-[50px] relative"
+      >
+        <div
+          class="esq flex flex-col items-center justify-center gap-5 w-[100%]"
+        >
+          <h2 class="titulo3 text-xl xl:text-4xl text-center mt-[3rem]">
+            Se surpreenda cada vez mais!
+          </h2>
+          <p class="desc3 xl:text-2xl text-center">
+            Lorem, ipsum dolor sit
+            <span class="text-[#5d1515]"> amet consectetur</span> adipisicing
+            elit.
+          </p>
+          <button
+            class="aprenda bg-red-900 text-white w-[150px] h-[40px] mt-[2rem]"
+          >
+            Aprenda já!
+          </button>
+          <div
+            class="cima flex flex-row gap-3 mt-[2rem] text-white/40 tracking-[2px] font-bold"
+          >
+            <div
+              class="campo w-[100px] h-[40px] xl:w-[150px] xl:h-[40px] rounded-[5px]"
+            ></div>
+            <div
+              class="campo w-[100px] h-[40px] xl:w-[150px] xl:h-[40px] rounded-[5px]"
+            ></div>
+          </div>
+          <div
+            class="cima flex flex-row gap-3 text-white/40 tracking-[2px] font-bold"
+          >
+            <div
+              class="campo w-[100px] h-[40px] xl:w-[150px] xl:h-[40px] rounded-[5px]"
+            ></div>
+            <div
+              class="campo w-[100px] h-[40px] xl:w-[150px] xl:h-[40px] rounded-[5px]"
+            ></div>
+          </div>
+        </div>
+        <div class="dir mt-[4rem] xl:mt-[0] w-[100%] relative">
+          <div
+            class="imagem w-[100%] h-[75vh] xl:h-[80vh] rounded-xl relative flex flex-col justify-end gap-5 pl-5 pr-2 xl:pl-5 xl:pb-[80px]"
+          >
+            <p class="bio text-white text-2xl">Neymar da Silva Santos Júnior</p>
+            <p class="bio text-white text-2xl">33 Anos de idade</p>
+            <p class="bio text-white text-2xl">Jogador do Santos FC</p>
+            <span class="social-icon mb-[70px] xl:mt-[0]">
+              <a href="https://www.instagram.com/neymarjr/" target="_blank"
+                ><i data-lucide="instagram" class="w-10 h-10 text-white"></i
+              ></a>
+            </span>
+            <span
+              class="opacidade h-[50vh] xl:h-[80vh] absolute rounded-xl"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div
+      class="secao4 pt-[5rem] xl:pt-[4rem] bg-[#121212] w-screen flex flex-col gap-10 justify-center items-center"
+    >
+      <div
+        class="banner flex gap-5 flex-col justify-center px-4 py-4 xl:py-0 xl:px-8 w-[95%] h-[60vh] rounded-[10px] xl:w-[80%] xl:h-[80vh] bg-[#222224] xl:rounded-[25px]"
+      >
+        <h2
+          class="titulo4 text-white xl:max-w-[65%] text-3xl xl:text-7xl leading-tight font-bold"
+        >
+          Your AI-Powered
+          <span class="text-[#8E60B7]">Design</span> Assistant
+        </h2>
+        <p class="desc4 max-w-[70%] xl:max-w-[55%] text-white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          temporibus eligendi dolore, repellendus veritatis sed fuga laborum
+          aspernatur, distinctio ad quas ipsum laboriosam
+        </p>
+        <div class="botoes flex flex-row gap-5 text-white mt-[1rem] xl:mt-[0]">
+          <button
+            class="bg-[#8E60B7] px-[1rem] py-[.5rem] xl:px-[2rem] xl:py-[.5rem]"
+          >
+            Get Started
+          </button>
+          <button>More templates</button>
+        </div>
+      </div>
+      <div class="relative w-full max-w-4xl mx-auto fade-mask">
+        <div class="flex overflow-hidden">
+          <!-- DIV ÚNICA com todas as palavras DUPLICADAS -->
+          <div class="scroller whitespace-nowrap">
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-white"
+              >HTML</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-[#8E60B7]"
+              >CSS</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-white"
+              >JAVASCRIPT</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-[#8E60B7]"
+              >GSAP</span
+            >
+            <!-- REPETIÇÃO IDÊNTICA -->
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-white"
+              >HTML</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-[#8E60B7]"
+              >CSS</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-white"
+              >JAVASCRIPT</span
+            >
+            <span class="text-3xl xl:text-6xl font-bold mx-8 text-[#8E60B7]"
+              >GSAP</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="feature w-[80%] pt-[10rem] h-[auto] flex flex-col gap-2 xl:gap-8 justify-center text-white"
+      >
+        <h2 class="titulo5 text-2xl xl:text-6xl font-bold">
+          Unleash your <span class="text-[#8E60B7]">creativity</span>
+        </h2>
+        <p class="desc5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          assumenda quaerat quidem, commodi error temporibus illum excepturi
+          quasi perferendis praesentium. Dolorem totam quisquam aliquam quod
+          consectetur rem culpa obcaecati accusamus!
+        </p>
+        <div
+          class="features-dad flex flex-col gap-[100px] mt-[5rem] xl:flex-row justify-center items-center xl:gap-10"
+        >
+          <div
+            class="features xl:w-[50%] xl:h-[auto] rounded-[5px] xl:rounded-[10px] bg-[#222224] flex flex-col py-4 px-3 justify-center"
+          >
+            <i data-lucide="briefcase" class="icone w-10 h-10 text-white"></i>
+            <h3 class="text-3xl mt-[2rem]">Upload Brief</h3>
+            <p class="mt-[.5rem]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              assumenda quaerat quidem
+            </p>
+          </div>
+          <div
+            class="features xl:w-[50%] xl:h-[auto] rounded-[5px] xl:rounded-[10px] bg-[#222224] flex flex-col py-4 px-3 justify-center"
+          >
+            <i data-lucide="figma" class="icone w-10 h-10 text-white"></i>
+            <h3 class="text-3xl mt-[2rem]">Generate Designs</h3>
+            <p class="mt-[.5rem]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              assumenda quaerat quidem
+            </p>
+          </div>
+          <div
+            class="features xl:w-[50%] xl:h-[auto] rounded-[5px] xl:rounded-[10px] bg-[#222224] flex flex-col py-4 px-3 justify-center"
+          >
+            <i data-lucide="pickaxe" class="icone w-10 h-10 text-white"></i>
+            <h3 class="text-3xl mt-[2rem]">Refine Creation</h3>
+            <p class="mt-[.5rem]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              assumenda quaerat quidem
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits w-[90%] h-[auto] pt-[10rem] pb-[4rem]">
+        <div
+          class="benefit1 flex flex-col items-center xl:flex-row justify-center gap-8 xl:gap-0"
+        >
+          <div
+            class="left flex flex-col items-center xl:items-start w-[80%] xl:w-[50%] gap-5 text-white relative"
+          >
+            <h2
+              class="titulo6 text-3xl xl:text-6xl pt-[2rem] font-bold text-center xl:text-start"
+            >
+              High-Resolution Outputs
+            </h2>
+            <p class="desc6 text-center xl:text-start">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+              voluptas deserunt iusto sint est dolores
+            </p>
+            <button
+              class="btg bg-[#8E60B7] w-[auto] xl:w-[35%] h-[50px] px-[1rem] py-[.5rem] xl:px-[2rem] xl:py-[.5rem]"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="right w-[90%] xl:w-[50%] relative">
+            <img class="graphic rounded-[10px]" src="graphic.jfif" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="benefit2 flex flex-col items-center xl:flex-row-reverse mt-[15rem] justify-center gap-8 xl:gap-[10rem]"
+        >
+          <div
+            class="left flex flex-col items-center xl:items-start w-[80%] xl:w-[50%] gap-5 text-white relative"
+          >
+            <h2
+              class="titulo7 text-3xl xl:text-6xl pt-[2rem] font-bold text-center xl:text-start"
+            >
+              Real-Time-Collaboration
+            </h2>
+            <p class="desc7 text-center xl:text-start">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+              voluptas deserunt iusto sint est dolores
+            </p>
+            <button
+              class="btc bg-[#8E60B7] w-[auto] xl:w-[35%] h-[50px] px-[1rem] py-[.5rem] xl:px-[2rem] xl:py-[.5rem]"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="right w-[90%] xl:w-[50%] relative">
+            <img class="comm rounded-[10px]" src="comm.jfif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
