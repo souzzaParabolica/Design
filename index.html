@@ -16,17 +16,40 @@
     <title>Document</title>
   </head>
   <body>
-    <header
-      class="fixed w-screen flex flex-col xl:flex-row justify-between items-center px-10 py-5 text-white gap-5"
-    >
-      <h1 class="text-3xl">SITE/LOGO</h1>
-      <ul class="flex gap-8 xl:text-[20px] text-center">
-        <li class="cursor-pointer">Curiosidades</li>
-        <li class="cursor-pointer">Sobre nós</li>
-        <li class="cursor-pointer">Contato</li>
-        <li class="cursor-pointer">Suporte</li>
+    <header class="fixed w-screen backdrop-blur-md bg-black/30 z-50">
+  <div class="container mx-auto px-4 xl:px-10 py-5 flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-3xl text-white">SITE/LOGO</h1>
+    
+    <!-- Menu Desktop (visível apenas em telas grandes) -->
+    <nav class="hidden xl:block">
+      <ul class="flex gap-8 text-[20px] text-white">
+        <li class="cursor-pointer hover:text-gray-300 transition">Curiosidades</li>
+        <li class="cursor-pointer hover:text-gray-300 transition">Sobre nós</li>
+        <li class="cursor-pointer hover:text-gray-300 transition">Contato</li>
+        <li class="cursor-pointer hover:text-gray-300 transition">Suporte</li>
       </ul>
-    </header>
+    </nav>
+    
+    <!-- Botão Hamburger (visível apenas em mobile) -->
+    <button id="menu-toggle" class="xl:hidden text-white focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Menu Mobile (oculto por padrão) -->
+  <div id="mobile-menu" class="xl:hidden hidden backdrop-blur-md bg-black/30 w-full">
+    <ul class="flex flex-col items-center py-4 space-y-4 text-white">
+      <li class="cursor-pointer hover:text-gray-300 transition w-full text-center py-2">Curiosidades</li>
+      <li class="cursor-pointer hover:text-gray-300 transition w-full text-center py-2">Sobre nós</li>
+      <li class="cursor-pointer hover:text-gray-300 transition w-full text-center py-2">Contato</li>
+      <li class="cursor-pointer hover:text-gray-300 transition w-full text-center py-2">Suporte</li>
+    </ul>
+  </div>
+</header>
+
     <div
       class="hero w-screen h-screen flex flex-col justify-center items-center gap-10 pt-[8rem] xl:pt-0"
     >
@@ -236,6 +259,233 @@
         </div>
       </div>
 
+      <div
+        class="secao5 pt-[5rem] xl:pt-[4rem] bg-[#121212] w-[80%] flex flex-col gap-5"
+      >
+        <h2
+          class="titulos5 w-[100%] mt-[10rem] titulo8 text-2xl text-white xl:text-6xl font-bold"
+        >
+          Affordable plans for <br />
+          <span class="text-[#8E60B7]">Every Need</span>
+        </h2>
+        <p class="p5 flex justify-start 2xl:w-[70%] xl:w-[70%] text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam in,
+          mollitia ipsa repellendus iusto temporibus voluptatem consequatur
+          beatae asperiores. Possimus, pariatur. Voluptatem dolorem voluptate,
+          fugit ducimus vitae quibusdam repellendus non.
+        </p>
+
+        <div class="switchPai mt-10 flex gap-2 justify-center items-center">
+          <p class="ps text-white">Monthly</p>
+          <label class="switch">
+            <input type="checkbox" class="input__check" />
+            <span class="slider"></span>
+          </label>
+          <p class="ps text-white">Yearly</p>
+        </div>
+
+        <div
+          class="priceCards mt-[2rem] flex flex-col xl:flex-row 2xl:flex-row gap-5 justify-center items-center flex-wrap"
+        >
+          <!-- CARTÃO 1 - PLANO FREE -->
+
+          <div
+            class="cartao relative xl:w-[30%] 2xl:w-[30%] h-[420px] bg-[#222224] rounded-xl flex flex-col justify-between p-5 gap-5"
+          >
+            <div class="parteDeCima flex flex-col gap-5">
+              <p class="free text-white flex">FREE</p>
+              <div class="prices prices1 flex flex-col gap-5 relative">
+                <!-- PREÇO POR MES -->
+                <h3
+                  id="price"
+                  class="font-bold text-2xl text-white"
+                >
+                  $0/M
+                </h3>
+               
+                <p class="text-white text-sm">Free Forever</p>
+                <hr class="border border-white/20" />
+                <ul class="text-white text-sm font-semibold">
+                  <li>- Basic AI-generated designs</li>
+                  <li>- Access to customization tools</li>
+                  <li>- Standard templates library</li>
+                  <li>- 5 projects per month</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- From Uiverse.io by Javierrocadev -->
+            <button
+              class="self-center group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- CARTÃO 2 - PLANO PRO -->
+
+          <div
+            class="cartao relative xl:w-[30%] 2xl:w-[30%]  h-[420px] bg-[#8E60B7] rounded-xl flex flex-col justify-between p-5 gap-5"
+          >
+            <div class="parteDeCima flex flex-col gap-5">
+              <p class="free text-white flex">PRO</p>
+              <div class="prices prices2 flex flex-col gap-5 relative">
+                <!-- PREÇO POR MES -->
+                <h3
+                  id="price"
+                  class="valor font-bold text-2xl text-white"
+                >
+                  $14.99/M
+                </h3>
+                <!-- PREÇO POR ANO -->
+                
+                <p class="text-white text-sm">During the Month</p>
+                <hr class="border border-white/20" />
+                <ul class="text-white text-sm font-semibold">
+                  <li>- Advanced AI-generated designs</li>
+                  <li>- Full Access to customization tools</li>
+                  <li>- Premium templates library</li>
+                  <li>- Unlimited projects</li>
+                  <li>- Real-time colaboration</li>
+                  <li>- Priority email support</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- From Uiverse.io by Javierrocadev -->
+            <button
+              class="self-center group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- CARTÃO 3 - PLANO BUSINESS -->
+
+          <div
+            class="cartao relative xl:w-[30%] 2xl:w-[30%] h-[420px] bg-[#222224] rounded-xl flex flex-col justify-between p-5 gap-5"
+          >
+            <div class="parteDeCima flex flex-col gap-5">
+              <p class="free text-white flex">PRO</p>
+              <div class="prices prices3 flex flex-col gap-5 relative">
+                <!-- PREÇO POR MES -->
+                <h3
+                  id="price"
+                  class="font-bold text-2xl text-white"
+                >
+                  $29.99/M
+                </h3>
+                <!-- PREÇO POR ANO -->
+                <p class="text-white text-sm">During the Month</p>
+                <hr class="border border-white/20" />
+                <ul class="text-white text-sm font-semibold">
+                  <li>- All the features of PRO plan</li>
+                  <li>- Dedicated acount manage</li>
+                  <li>- Custom AI solutions and designs</li>
+                  <li>- Onboarding and training sessions</li>
+                  <li>- 24/7 support priority</li>
+                  <li>- Advanced analytics and reporting</li>
+                  <li>- Secure cloud storage</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- From Uiverse.io by Javierrocadev -->
+            <button
+              class="self-center group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="secao6 pt-[5rem] xl:pt-[4rem] bg-[#121212] w-[80%] flex flex-col gap-5"
+      >
+        <h2 class="titulos6 text-white w-[100%] titulo10 text-2xl xl:text-6xl font-bold">
+          Stay inspired with Our <br />
+          Latest
+          <span class="text-[#8E60B7]">Insights</span>
+        </h2>
+        <p class="text-white w-[70%]">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          officia ad sapiente, odit omnis quas perspiciatis architecto ducimus
+          dolore odio tempora, ex earum, alias maxime nam. Dolor consectetur
+          nobis laudantium.
+        </p>
+        <div
+          class="infoCardsPai flex justify-center items-center gap-5 flex-wrap"
+        >
+
+          <!-- INFOCARD-1 -->
+          <div
+            class="infoCard relative overflow-hidden flex flex-col w-[300px] h-[300px] bg-[#222224] rounded-[10px] gap-3 pb-5"
+          >
+          <div class="img1 w-[100%] h-[200px]"></div>
+           
+            <div class="flex justify-between items-center px-4">
+              <p class="text-[#dedede] font-semibold text-sm">Apr 6,2022</p>
+              <p class="text-[#dedede] font-semibold text-sm">6 min read</p>
+            </div>
+
+            <h3 class="text-white font-semibold px-4 text-xl">Starting and Growing a Carrer in Web Design</h3>
+          </div>
+
+          <!-- INFOCARD-2 -->
+
+          <div
+            class="infoCard relative overflow-hidden flex flex-col w-[300px] h-[300px] bg-[#222224] rounded-[10px] gap-3 pb-5"
+          >
+          <div class="img2 w-[100%] h-[200px]"></div>
+           
+            <div class="flex justify-between items-center px-4">
+              <p class="text-[#dedede] font-semibold text-sm">Mar 15,2022</p>
+              <p class="text-[#dedede] font-semibold text-sm">5 min read</p>
+            </div>
+
+            <h3 class="text-white font-semibold px-4 text-xl">Create a Landing Page That Performs Great</h3>
+          </div>
+
+          <!-- INFOCARD-3 -->
+          <div
+            class="infoCard relative overflow-hidden flex flex-col w-[300px] h-[300px] bg-[#222224] rounded-[10px] gap-3 pb-5"
+          >
+          <div class="img3 w-[100%] h-[200px]"></div>
+           
+            <div class="flex justify-between items-center px-4">
+              <p class="text-[#dedede] font-semibold text-sm">Feb 25,2022</p>
+              <p class="text-[#dedede] font-semibold text-sm">7 min read</p>
+            </div>
+
+            <h3 class="text-white font-semibold px-4 text-xl">How Can Designers Prepare For The Future?</h3>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="banner2 mt-[5rem] flex gap-5 flex-col justify-center px-4 py-4 xl:py-0 xl:px-8 w-[95%] h-[60vh] rounded-[10px] xl:w-[80%] xl:h-[80vh] bg-[#222224] xl:rounded-[25px]"
+      >
+        <h2
+          class="titulo4 text-white xl:max-w-[65%] text-3xl xl:text-7xl leading-tight font-bold"
+        >
+          Start Your Design
+          <span class="text-[#8E60B7]">Journey</span> Today
+        </h2>
+        <p class="desc4 max-w-[70%] xl:max-w-[55%] text-white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          temporibus eligendi dolore
+        </p>
+        <div class="botoes flex flex-row gap-5 text-white mt-[1rem] xl:mt-[0]">
+          <button
+            class="bg-[#8E60B7] px-[1rem] py-[.5rem] xl:px-[2rem] xl:py-[.5rem]"
+          >
+            Get Started
+          </button>
+          <button>More templates</button>
+        </div>
+      </div>
+
       <div class="benefits w-[90%] h-[auto] pt-[10rem] pb-[4rem]">
         <div
           class="benefit1 flex flex-col items-center xl:flex-row justify-center gap-8 xl:gap-0"
@@ -291,6 +541,7 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="animations.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
